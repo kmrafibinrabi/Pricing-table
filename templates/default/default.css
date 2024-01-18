@@ -1,0 +1,251 @@
+.vxpt_pricing_table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.vxpt_pricing_table {
+	border:  1px;
+	border-radius: 10px;
+}
+
+
+.vxpt_table_col-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.6em;
+    color: #FFF;
+    margin-top: 15px;
+    text-align: left;
+    margin-bottom: 25px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.vxpt_table_col-title a {
+    font-size: 0.6em;
+}
+
+.vxpt_action_buttons {
+    padding: 40px 0;
+}
+
+.vxpt_action_buttons button {
+    margin: 0 5px;
+    padding: 12px;
+}
+.vxpt_table_col .col_price .vxpt-price-currency{
+    font-size: 0.7em;
+    opacity: 0.7;
+    font-weight: normal;
+}
+.vxpt-price-suffix{
+    font-size: 0.7em;
+    opacity: 0.7;
+    font-weight: normal;
+
+}
+/** ========================
+* Contenedor
+============================*/
+
+.vxpt_table_col {
+    flex: 0 0 300px;
+    margin: 0 10px;
+    text-align: center;
+    width: 100%;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    border-radius: 10px;
+}
+
+.vxpt_table_col.highlighted {
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+    transform: scale(1.06);
+    border-top: 4px solid #002a64;
+}
+
+.col_title {
+    color: #fff;
+    background: #0084ff;
+    padding: 20px 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+.vxpt_table_row.col_description {
+	font-size: 1.em;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.vxpt_table_col.recommended .col_title {
+    background: #2db3cb;
+}
+
+.vxpt_table_col.recommended .btn_cta {
+    background: #2db3cb;
+}
+
+.vxpt_table_col .col_price {
+    background: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px 0;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+
+.col_features ul {
+    background: #FFF;
+    color: #403d3a;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.table-list li {
+    font-size: 1em;
+    padding: 12px 8px;
+    text-transform: capitalize;
+}
+
+.table-list li.unchecked {
+    color: #777;
+}
+
+.table-list li:before {
+    font-family: 'Font Awesome 5 Free';
+    display: inline-block;
+    position: relative;
+    right: 8px;
+    font-size: 20px;
+}
+
+.table-list li.checked:before {
+    content: "\f058";
+    color: #11b141;
+}
+
+.table-list li.unchecked:before {
+    content: "\f057";
+    color: #da2727;
+}
+
+.table-list li span {
+    font-weight: 400;
+}
+
+.table-list li span.unlimited {
+    color: #FFF;
+    background: #e95846;
+    font-size: 0.9em;
+    padding: 5px 7px;
+    display: inline-block;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    border-radius: 38px;
+}
+
+
+/* .table-list li:nth-child(2n) {
+    background: ;
+} */
+
+.col_cta {
+    background: #FFF;
+    border-top: 1px solid #F0F0F0;
+    padding: 25px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.col_cta p {
+    float: left;
+    color: #37353a;
+    font-weight: 700;
+    font-size: 2.4em;
+}
+
+.col_cta p sup {
+    font-size: 0.5em;
+    position: relative;
+    left: 5px;
+}
+
+.col_cta .btn_cta {
+    color: #333;
+    border: 1px solid #0084ff;
+    padding: 10px 16px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1em;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+.col_cta .btn_cta:hover {
+    background: #0084ff;
+    color: #fff;
+}
+
+.highlighted .col_cta .btn_cta {
+    color: #fff;
+    background: #002a64;
+    border: none;
+}
+
+.highlighted .col_cta .btn_cta:hover {
+    background: #0084ff;
+}
+
+/** ================
+* Responsive
+===================*/
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .vxpt_pricing_table {
+        width: 768px;
+    }
+
+    .vxpt_table_col {
+        width: 236px;
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    .vxpt_pricing_table {
+        flex-direction: column;
+    }
+
+    .vxpt_table_col {
+        display: block;
+        float: none;
+        margin: 40px 0 40px 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .vxpt_pricing_table {
+        width: 300px;
+    }
+}

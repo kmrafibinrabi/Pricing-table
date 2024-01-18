@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.ptable-item {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ptable-single {
+  border-top: 4px solid #0084ff;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ptable-single:hover {
+  transform: scale(1.06);
+}
+
+.ptable-header {
+  background: #002a64;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.ptable-title h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #fff;
+}
+
+.ptable-price h2 {
+  font-size: 32px;
+  margin: 0;
+  color: #fff;
+}
+
+.ptable-price small {
+  font-size: 14px;
+}
+
+.ptable-price span {
+  font-size: 18px;
+}
+
+.ptable-body {
+  padding: 20px;
+}
+
+.ptable-description ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ptable-description ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.ptable-footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.ptable-action a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  background: #002a64;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.ptable-action a:hover {
+  background: #0084ff;
+}
